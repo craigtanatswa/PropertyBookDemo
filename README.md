@@ -7,6 +7,26 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+
+
+## DEPLOYMENT INSTRUCTIONS
+- The local machine should have Laravel and PHP installed. This project was developed in the Laravel Framework with version 10.10 in PHP 8.2
+- You should have xampp installed with MySQL running on port 3306 on your local device.
+- Download Git and pull the project into xampp 
+- The project should be located in \xampp\htdocs\PropertyBookDemo.
+- Open a git terminal in the project. You should then type (php artisan serve) to start the server.
+
+- Create a database in MySQL by running "create database propertybook;" (Instructions are below) with the following details: 
+- To create the required dtabase table in MySQL you should open a new terminal in the project the run 'php artisan auth' (you can skip this because the project has the auth folder already) followed by the 'php artisan migrate' command (CRUCIAL FOR TABLE CREATION). This will create the table needed for logging in and registration. 
+-Confirm the database and database table were created by accessing (http://localhost/phpmyadmin/) then clicking on propertybook. The table should have at least 3 important data columns, namely: "name, email and password" along with other columns.
+- If all of this was successfully complied with the project will run seamlessly.
+
+- Before accessing the site you should register then logi (Top Left).
+- With the above complied with, paste the following link to your browser (http://127.0.0.1:8000/) which will take you to the laravel abouts page and will require you to login. Sample data I used on my local machine (Name: Admin, Username: admin@gmail.com , Password: 12345678)
+
+- Navigate the smooth website.
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
@@ -18,6 +38,8 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - Database agnostic [schema migrations](https://laravel.com/docs/migrations).
 - [Robust background job processing](https://laravel.com/docs/queues).
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+
+
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
